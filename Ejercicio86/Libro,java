@@ -1,0 +1,108 @@
+package Ejercicio86;
+
+public class Libro{
+    private List<Pagina> contenido;
+    private List<Capitulo> capitulos;
+    private Map<String, int> indice;
+
+    public Libro(List<Capitulo> capitulos) {
+        this.capitulos = capitulos;
+        contenido = new ArrayList<>();
+        indice = new HashMap<>();
+        for (Capitulo capitulo : capitulos) {
+            contenido.addAll(capitulo.getPaginas());
+            indice.put(capitulo.getNombre(), capitulo.getPaginaInicial);
+        }
+    }
+
+    public List<Capitulo> obtenerCapitulos() {
+        return capitulos;
+    }
+
+    public int obtenerCantidadPaginasTotales() {
+        return contenido.size();
+    }
+
+    public int obtenerCantidadPaginasCapitulo(int indiceCapitulo) {
+        if (indiceCapitulo >= 0 && indiceCapitulo < capitulos.size()) {
+            return capitulos.get(indiceCapitulo).getPaginas().size();
+        }
+        return 0; 
+    }
+
+    public Pagina obtenerPaginaInicial(Capitulo capitulo){
+        return capitulo.getPaginas().get(0);
+    }
+
+    public int obtenerPaginaInicial(Capitulo capitulo){
+        return capitulo.getPaginaInicial();
+    }
+
+    public Pagina obtenerPaginaFinal(Capitulo capitulo){
+        return capitulo.getPaginas().get(capitulo.getPaginas().size() - 1);
+    }
+
+    public int obtenerPaginaFinal(Capitulo capitulo){
+        return capitulo.getPaginaFinal();
+    }
+
+    public int contarPalabras(String texto) {
+        if (texto == null || texto.isEmpty()) {
+            return 0; // El texto está vacío, no hay palabras que contar.
+        }
+        String[] palabras = texto.split("//s+"); // Dividir el texto en palabras usando espacios en blanco como delimitadores.
+        return palabras.length;
+    }
+
+    public int palabrasCapitulo(Capitulo capitulo){
+        int acumulado = 0;
+        for (Pagina pag : capitulo.getPaginas){
+            acumulado += contarPalabras(pagina.getContenido());
+        }
+        return acumulado;
+    }
+
+    public int palabrasLibro(){
+        int acumulado = 0;
+        for (Capitulo cap : capitulos){
+            acumulado+= palabrasCapitulo(cap);
+        }
+        return acumulado;
+    }
+
+    public int contarCaracteres(String texto) {
+        if (texto == null) {
+            return 0;
+        }
+        return texto.length();
+    }
+
+    public int cantidadCaracteresCapitulo(Capitulo capitulo){
+        int acumulado = 0;
+        for(Pagina pag : capitulo.getPaginas()){
+            for(String texto : pag.getContenido()){
+                for(String palabra : texto.split("//s+")){
+                    acumulado += contarCaracteres();
+                }
+            }
+        }
+        return acumulado;
+    }
+
+    public int cantidadCaracteresLibro(){
+        int acumulado = 0;
+
+        for (Capitulo cap : capitulos){
+            acumulado += cantidadCaracteresCapitulo(cap);
+        }
+
+        return acumulado;
+    }
+
+    public void addReferencia(int num_pagina, String texto){
+        contenido.get(num_pagina).addReferencia(texto);
+    }
+
+    
+    
+}

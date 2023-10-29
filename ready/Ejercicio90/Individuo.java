@@ -1,4 +1,4 @@
-package Ejercicio90;
+package ready.Ejercicio90;
 
 import java.util.Objects;
 

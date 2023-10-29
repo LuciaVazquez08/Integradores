@@ -1,0 +1,11 @@
+Diseñar un sistema de inventario simplificado para un negocio. El negocio vende
+productos que tienen un nombre, un precio y una cantidad en stock. Implementar las
+siguientes funcionalidades:
+a) Agregar productos al inventario.
+b) Actualizar la cantidad en stock de un producto después de una venta.
+c) Calcular el valor total del inventario.
+d) Mostrar una lista de productos agotados (con cantidad en stock igual a cero).
+e) Permitir la búsqueda de productos por nombre y mostrar su información
+detallada.
+f) Permitir la búsqueda de productos por nombre parcial y mostrar su información
+detallada.

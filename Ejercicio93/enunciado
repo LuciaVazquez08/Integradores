@@ -1,0 +1,8 @@
+Crear una simulación de una red social simplificada. Diseñar clases que representen
+usuarixs, publicaciones y amistades entre usuarixs. Implementar funcionalidades como:
+a) Publicar un mensaje o foto en el perfil de un usuarix.
+b) Agregar amistades y gestionar solicitudes de amistad.
+c) Mostrar el feed de noticias de un usuarix, que incluye las publicaciones de
+amigxs.
+d) Calcular estadísticas, como la cantidad de amigxs de un usuarix y la cantidad de
+"me gusta" en sus publicaciones.

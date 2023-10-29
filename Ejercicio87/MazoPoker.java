@@ -66,6 +66,14 @@ public class MazoPoker {
         }
         return cartas;
     }
+
+    public void colocarCartasArriba(List<Carta> cartas){
+        cartas.addAll(mazo);
+        mazo.clear();
+        mazo.addAll(cartas);
+
+        
+    }
 }
 
 

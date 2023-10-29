@@ -1,4 +1,4 @@
-package Ejercicio85;
+package ready.Ejercicio85;
 
 public class Bloque {
     private int largo;

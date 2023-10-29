@@ -1,0 +1,10 @@
+Definir la clase AgendaTelefonica, 
+que permita registrar individuos con su nombre, dirección y teléfono. 
+Además deberá permitir la carga de individuos
+nuevos, 
+
+
+Se deberá permitir que a partir de un nombre dado, devuelva la
+dirección y el número de teléfono. 
+
+y la eliminación de individuos ya existentes.

@@ -1,0 +1,13 @@
+Definir la clase Estanteria, que permita mantener una serie de estantes, el cual cada
+uno de ellos contiene varios libros numerados correlativamente. Cada libro se
+caracteriza por poseer un nombre, un autor, una editorial y un año de publicación. Se
+pueden agregar estantes, agregar libros en un estante, eliminar un libro y buscar un
+libro, obteniendo si no existe, o en el caso de que exista, en qué estante se encuentra y
+cuál es su número asociado. Agregar la siguiente funcionalidad:
+a) Agregar la funcionalidad para listar todos los libros en un estante específico.
+b) Permitir la posibilidad de reorganizar los libros en un estante al cambiar su
+orden.
+c) Implementar un método que calcule la edad promedio de los libros en un estante
+(basado en el año de publicación).
+d) Agregar la capacidad de buscar libros por autor y listar todos los libros de un
+autor en la estantería.

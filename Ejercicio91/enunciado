@@ -1,0 +1,8 @@
+Definir la clase Empresa, que permita contener empleadxs de distintas áreas de una
+empresa. Lxs empleadxs se caracterizan por poseer un nombre, apellido y número de 
+empleado. Considere a la empresa como una lista de áreas (se puede buscar por
+nombre o código de área). Definir métodos de:
+obtención del área a la que pertenece un empleadx
+registro de un nuevo empleadx
+transferencia de un empleadx de su área a otra área de la empresa
+baja de un empleadx de la empresa.

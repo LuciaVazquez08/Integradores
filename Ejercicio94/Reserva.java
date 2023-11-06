@@ -2,6 +2,9 @@ package Ejercicio94;
 
 public class Reserva {
     private Hotel hotel;
+    private Habitacion habitacion;
+    
+
     private String fechaEntrada;
     private String fechaSalida;
 
@@ -11,5 +14,17 @@ public class Reserva {
         this.fechaSalida = fechaSalida;
     }
 
-    
+    public Hotel getHotel() {
+            return hotel;
+        }
+    public String getFechaEntrada() {
+        return fechaEntrada;
+    }
+
+    public String getFechaSalida() {
+        return fechaSalida;
+    }
+    public Habitacion getHabitacion() {
+        return habitacion;
+    }
 }

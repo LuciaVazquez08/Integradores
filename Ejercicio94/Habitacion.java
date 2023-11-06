@@ -19,4 +19,7 @@ public class Habitacion {
         return this.numero;
     }
 
+    public int getPrecio() {
+            return precio;
+        }
 }

@@ -100,6 +100,33 @@ public class Hotel {
         } else {
             throw new IllegalArgumentException("Tipo de habitación no válido");
         }
-    }    
+    }
+    
+    public List<Habitacion> disponibilidad(String fecha) {
+        List<Habitacion> disponibles = new ArrayList<>();
+
+        for (Habitacion habitacion : habitaciones.keySet()) {
+            boolean habitacionDisponible = true;
+
+            for (Reserva reserva : habitaciones.get(habitacion)) {
+                String reserva_entrada = reserva.getFechaEntrada();
+                String reserva_salida = reserva.getFechaSalida();
+    
+                if (!(fecha.compareTo(reserva_salida) >= 0 || fecha.compareTo(reserva_entrada) <= 0)) {
+                    habitacionDisponible = false;
+                    break; 
+                }
+            }
+            if (habitacionDisponible) {
+                disponibles.add(habitacion);
+            }
+        }
+        return disponibles;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+    
 
 }

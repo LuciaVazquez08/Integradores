@@ -11,6 +11,10 @@ public class Cliente {
         this.reservas = new ArrayList<>();
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public void reservar(Hotel hotel, int cant_ocupantes, String fechaEntrada, String fechaSalida){
         if (hotel.getTipos().contains(cant_ocupantes)){
 
@@ -29,6 +33,17 @@ public class Cliente {
     public void canceclarReserva(Reserva reserva){
         reserva.getHotel().getHabitaciones().get(reserva.getHabitacion()).remove(reserva);
         reservas.remove(reserva);
+    }
+
+    public int calcularReserva(Reserva reserva){
+        return reserva.calcularPrecio();
+    }
+
+    public void mostrarReservas(){
+        for (Reserva reserva : reservas){
+            System.out.println(reserva.toString());
+            System.out.println();
+        }
     }
 
 }

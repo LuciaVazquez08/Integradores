@@ -1,5 +1,7 @@
 Diseñar un sistema de reservas de hoteles simplificado. Crear clases que representen
-hoteles, reservas, habitaciones y clientes. Implementar funcionalidades para:
+hoteles, reservas, habitaciones y clientes. 
+
+Implementar funcionalidades para:
 
 a) Reservar una habitación en un hotel.
 b) Agregar la capacidad para que los clientes cancelen sus reservas.

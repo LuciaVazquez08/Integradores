@@ -11,4 +11,12 @@ public class Habitacion {
         this.ocupantes = ocupantes;
     }
 
+    public int getOcupantes(){
+        return this.ocupantes;
+    }
+
+    public Integer getNumero() {
+        return this.numero;
+    }
+
 }
